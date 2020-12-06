@@ -26,5 +26,19 @@ namespace Midterm_Demo.Controllers
 
             return View();
         }
+
+        public ActionResult Students()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
+        public ActionResult Courses()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
     }
 }

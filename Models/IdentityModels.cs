@@ -24,7 +24,7 @@ namespace Midterm_Demo.Models
         public DbSet<Course> Courses { get; set; }
         public DbSet<CourseStatus> CourseStatuses { get; set; }
         public ApplicationDbContext()
-            : base("Test", throwIfV1Schema: false)
+            : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
 

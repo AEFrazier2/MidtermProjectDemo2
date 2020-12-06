@@ -14,13 +14,13 @@ namespace Midterm_Demo.Controllers
     {
         public ApplicationDbContext db = new ApplicationDbContext();
 
-        // GET: Student
+        // GET: Student - Listing Students
         public ActionResult Index()
         {
             return View(db.Students.ToList());
         }
 
-        // GET: Student/Details/5
+        // GET: Student/Details/5 - Getting Details
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -46,7 +46,7 @@ namespace Midterm_Demo.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "StudentId,FirstName,LastName,Age,CourseId,CourseEnrolledDate,CourseStatus,Grade")] Student student)
+        public ActionResult Create([Bind(Include = "FirstName,LastName,Age,CourseId,CourseEnrolledDate,CourseStatus,Grade")] Student student)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace Midterm_Demo.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "StudentId,FirstName,LastName,Age,CourseId,CourseEnrolledDate,CourseStatus,Grade")] Student student)
+        public ActionResult Edit([Bind(Include = "FirstName,LastName,Age,CourseId,CourseEnrolledDate,CourseStatus,Grade")] Student student)
         {
             if (ModelState.IsValid)
             {
