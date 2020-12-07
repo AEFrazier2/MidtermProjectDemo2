@@ -38,6 +38,12 @@ namespace Midterm_Demo.Controllers
         // GET: Student/Create
         public ActionResult Create()
         {
+            //var Courses = db.Courses.ToList();
+            //var CourseStatus = db.CourseStatuses.ToList();
+
+            //ViewBag.Courses = new SelectList(Courses, "Id", "CourseName");
+            //ViewBag.CourseStatuses = new SelectList(CourseStatus, "Id", "Status");
+
             return View();
         }
 

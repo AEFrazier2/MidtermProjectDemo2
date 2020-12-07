@@ -171,6 +171,10 @@
     <Compile Include="Controllers\CourseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Migrations\202012070254538_cs.cs" />
+    <Compile Include="Migrations\202012070254538_cs.Designer.cs">
+      <DependentUpon>202012070254538_cs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -187,6 +191,10 @@
     <Compile Include="Migrations\202012050015119_CourseAndCourseStatusData.cs" />
     <Compile Include="Migrations\202012050015119_CourseAndCourseStatusData.Designer.cs">
       <DependentUpon>202012050015119_CourseAndCourseStatusData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012061954233_UpdateStudentData.cs" />
+    <Compile Include="Migrations\202012061954233_UpdateStudentData.Designer.cs">
+      <DependentUpon>202012061954233_UpdateStudentData.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\StudentData.cs" />
     <Compile Include="Migrations\StudentData.Designer.cs">
@@ -206,7 +214,6 @@
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -294,6 +301,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202012050015119_CourseAndCourseStatusData.resx">
       <DependentUpon>202012050015119_CourseAndCourseStatusData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012061954233_UpdateStudentData.resx">
+      <DependentUpon>202012061954233_UpdateStudentData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012070254538_cs.resx">
+      <DependentUpon>202012070254538_cs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\StudentData.resx">
       <DependentUpon>StudentData.cs</DependentUpon>
